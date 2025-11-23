@@ -1,0 +1,148 @@
+:root{
+  --width-pictures: 40%
+}
+
+body{
+  margin: 0;
+  background: #020024;
+  background: linear-gradient(90deg, rgb(4, 1, 66) 0%, rgba(25, 25, 112, 1) 35%, rgba(0, 0, 139, 1) 100%);
+  color:aliceblue;
+}
+
+header{
+  border: #6A5ACD 2px outset;
+  background-color: #483D8B;
+  padding: 0.5em;
+  box-shadow: 0px 4px 8px 2px rgb(7, 3, 81);
+}
+
+h1{
+  justify-self: center;
+}
+
+main{
+  height: 100%;
+  width: auto;
+}
+
+.container-link {
+  height: 75vh;
+  display: grid;
+  grid-template-columns: repeat(3,1fr) ;
+}
+
+.Bio-link{
+    position: relative;
+    display: inline-block;
+    width: var(--width-pictures);
+    height: auto;
+    justify-self: center;
+    align-self: center;
+}
+
+.Bio-link img{
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  border: #000080 2px inset;
+  opacity: 1;
+  transition: opacity 1 ease-in-out;
+}
+
+.Bio-link span{
+  position: absolute;
+  color: aliceblue;
+  text-decoration: underline 2px;
+  font-weight: 600;
+  inset: 0;
+  text-align: center;
+  align-content: center;
+  pointer-events: none;
+  z-index: -1;
+}
+
+
+.Bio-link img:hover{
+  opacity: 0.2;
+}
+
+.Project-link{
+    position: relative;
+    display: inline-block;
+    width: var(--width-pictures);
+    height: auto;
+    justify-self: center;
+    align-self: center;
+}
+
+.Project-link img{
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  border: #000080 2px inset;
+  opacity: 1;
+  transition: opacity 1 ease-in-out;
+}
+
+.Project-link span{
+  position: absolute;
+  color: aliceblue;
+  text-decoration: underline 2px;
+  font-weight: 600;
+  inset: 0;
+  text-align: center;
+  align-content: center;
+  pointer-events: none;
+  z-index: -1;
+}
+
+
+.Project-link img:hover{
+  opacity: 0.2;
+}
+
+.Contact-link{
+    position: relative;
+    display: inline-block;
+    width: var(--width-pictures);
+    height: auto;
+    justify-self: center;
+    align-self: center;
+}
+
+.Contact-link img{
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  border: #000080 2px inset;
+  opacity: 1;
+  transition: opacity 1 ease-in-out;
+}
+
+.Contact-link span{
+  position: absolute;
+  color: aliceblue;
+  text-decoration: underline 2px;
+  font-weight: 600;
+  inset: 0;
+  text-align: center;
+  align-content: center;
+  pointer-events: none;
+  z-index: -1;
+}
+
+
+.Contact-link img:hover{
+  opacity: 0.2;
+}
+
+footer{
+  position: sticky;
+  margin-left: 1em;
+}
+
+
+
