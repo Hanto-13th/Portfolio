@@ -1,19 +1,24 @@
 :root{
-  --width-pictures: 40%
+  --width-pictures: 40%;
+  --main-color: #000000e1;
+  --secondary-color: #272727;
+  --third-color: #B0C4DE;
+  --shadow: rgba(0, 0, 0, 0.905);
+  --font-color: aliceblue;
+  --font-header-color: firebrick;
 }
 
 body{
   margin: 0;
-  background: #020024;
-  background: linear-gradient(90deg, rgb(4, 1, 66) 0%, rgba(25, 25, 112, 1) 35%, rgba(0, 0, 139, 1) 100%);
-  color:aliceblue;
+  background: var(--main-color);
+  color:var(--font-color);
 }
 
 header{
-  border: #6A5ACD 2px outset;
-  background-color: #483D8B;
+  border:  2px outset var(--third-color);
+  background-color: var(--secondary-color);
   padding: 0.5em;
-  box-shadow: 0px 4px 8px 2px rgb(7, 3, 81);
+  box-shadow: 0px 4px 8px 2px var(--third-color);
 }
 
 h1{
@@ -21,7 +26,7 @@ h1{
 }
 
 main{
-  height: 100%;
+  height: 75vh;
   width: auto;
 }
 
@@ -45,14 +50,14 @@ main{
   height: auto;
   display: block;
   border-radius: 8px;
-  border: #000080 2px inset;
+  border: var(--third-color) 2px inset;
   opacity: 1;
   transition: opacity 1 ease-in-out;
 }
 
 .Bio-link span{
   position: absolute;
-  color: aliceblue;
+  color: var(--font-color);
   text-decoration: underline 2px;
   font-weight: 600;
   inset: 0;
@@ -81,14 +86,14 @@ main{
   height: auto;
   display: block;
   border-radius: 8px;
-  border: #000080 2px inset;
+  border: var(--third-color) 2px inset;
   opacity: 1;
   transition: opacity 1 ease-in-out;
 }
 
 .Project-link span{
   position: absolute;
-  color: aliceblue;
+  color: var(--font-color);
   text-decoration: underline 2px;
   font-weight: 600;
   inset: 0;
@@ -117,14 +122,14 @@ main{
   height: auto;
   display: block;
   border-radius: 8px;
-  border: #000080 2px inset;
+  border: var(--third-color) 2px inset;
   opacity: 1;
   transition: opacity 1 ease-in-out;
 }
 
 .Contact-link span{
   position: absolute;
-  color: aliceblue;
+  color: var(--font-color);
   text-decoration: underline 2px;
   font-weight: 600;
   inset: 0;
