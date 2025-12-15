@@ -1,6 +1,6 @@
 :root{
 
-  --width-grid_pic: 40%;
+  --width-grid_pic: 60%;
   --height-grid_pic: 80%;
   --main-color: #000000e1;
   --secondary-color: #272727;
@@ -8,6 +8,7 @@
   --shadow: rgba(0, 0, 0, 0.905);
   --font-color: aliceblue;
   --font-header-color: firebrick;
+  --border-color: slategrey;
 }
 
 body{
@@ -87,15 +88,23 @@ main{
   border: outset var(--third-color) 2px;
   border-radius: 3em;
   box-shadow: 4px 4px 8px 2px var(--third-color);
+  transition: transform .2s, border-color .2s, box-shadow .2s;
+}
 
 
+.global-desc:hover {
+  transform: translateY(-2px);
+  border-color: var(--border-color);
+  box-shadow: 4px 4px 8px 2px var(--border-color);
 }
 
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(2,1fr) ;
   grid-template-rows: auto;
-  row-gap: 3em;
+  justify-self: center;
+  column-gap: 1em;
+  row-gap: 2em;
 }
 
 .Project-1{

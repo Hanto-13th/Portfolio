@@ -8,6 +8,7 @@
   --shadow: rgba(0, 0, 0, 0.905);
   --font-color: aliceblue;
   --font-header-color: firebrick;
+  --border-color: slategrey;
 }
 
 body{
@@ -82,9 +83,13 @@ h1{
   background-color: var(--secondary-color);
   border: outset var(--third-color) 2px;
   border-radius: 3em;
-  box-shadow: 4px 4px 8px 2px var(--third-color);
+  transition: transform .2s, border-color .2s;
+}
 
 
+h1:hover {
+  transform: translateY(-2px);
+  border-color: var(--border-color);
 }
 
 
@@ -100,7 +105,15 @@ h1{
   border: 2px solid var(--third-color);
   background-color: var(--secondary-color);
   box-shadow: 4px 4px 8px 2px var(--third-color);
+  transition: transform .2s, border-color .2s, box-shadow .2s;
 
+
+}
+
+.contacts-grid:hover {
+  transform: translateY(-2px);
+  border-color: var(--border-color);
+  box-shadow: 4px 4px 8px 2px var(--border-color);
 }
 
 .global-desc{
@@ -134,7 +147,6 @@ h1{
   text-decoration: none;
   cursor: text;
   transition: color 0.3s ;
-
 
 }
 
