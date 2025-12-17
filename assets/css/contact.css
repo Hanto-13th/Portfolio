@@ -31,16 +31,18 @@ header{
   position: relative;
   display: inline-block;
   width: 10%;
+  height: auto;
   margin: 1em;
   margin-left: 15%;
-  height: auto;
 }
 
 .contact-picture img{
 
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   display: block;
+  background-color: silver;
   border-radius: 8px;
   border: var(--third-color) 2px inset;
 

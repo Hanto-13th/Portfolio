@@ -1,6 +1,6 @@
 :root{
-  --width-grid_pic: 60%;
-  --height-grid_pic: 80%;
+  --width-grid_pic: auto;
+  --height-grid_pic: auto;
   --main-color: #000000e1;
   --secondary-color: #272727;
   --third-color: #B0C4DE;
@@ -204,16 +204,15 @@ h2{
 
 .pics-grid {
   display: grid;
-  grid-template-columns: repeat(2,1fr) ;
+  grid-template-columns: repeat(2, minmax(150px, 350px));
   grid-template-rows: auto;
   justify-self: center;
-  column-gap: 1em;
-  row-gap: 2em;
-  margin-top: 2%;
+  column-gap: 10em;
+  row-gap: 5em;
+  margin-top: 3em;
 }
 
-
-.image1{
+.image1 {
     position: relative;
     display: inline-block;
     width: var(--width-grid_pic);
@@ -225,11 +224,13 @@ h2{
 .image1 img{
   width: 100%;
   height: 100%;
-  object-fit: cover;
   display: block;
   border-radius: 8px;
   border: var(--third-color) 2px inset;
+  opacity: 1;
+  transition: opacity 1 ease-in-out;
 }
+
 
 .image1 p{
   margin-bottom: 5%;
@@ -254,7 +255,7 @@ h2{
   border-color: var(--border-color);
 }
 
-.image2{
+.image2 {
     position: relative;
     display: inline-block;
     width: var(--width-grid_pic);
@@ -266,18 +267,20 @@ h2{
 .image2 img{
   width: 100%;
   height: 100%;
-  object-fit: cover;
   display: block;
   border-radius: 8px;
   border: var(--third-color) 2px inset;
+  opacity: 1;
+  transition: opacity 1 ease-in-out;
 }
+
 
 .image2 p{
   margin-bottom: 5%;
   top: 2%;
   padding: 2%;
   position: relative;
-  color: var(--font-header-color);
+  color: var(--font-color);
   border: var(--third-color) 2px solid;
   border-radius: 2em;
   background-color: var(--secondary-color);
@@ -285,9 +288,17 @@ h2{
   text-align: center;
   align-content: center;
   pointer-events: none;
+  transition: transform .2s, border-color .2s;
+
+  
 }
 
-.image3{
+.image2:hover p{
+  transform: translateY(-2px);
+  border-color: var(--border-color);
+}
+
+.image3 {
     position: relative;
     display: inline-block;
     width: var(--width-grid_pic);
@@ -299,18 +310,20 @@ h2{
 .image3 img{
   width: 100%;
   height: 100%;
-  object-fit: cover;
   display: block;
   border-radius: 8px;
   border: var(--third-color) 2px inset;
+  opacity: 1;
+  transition: opacity 1 ease-in-out;
 }
+
 
 .image3 p{
   margin-bottom: 5%;
   top: 2%;
   padding: 2%;
   position: relative;
-  color: var(--font-header-color);
+  color: var(--font-color);
   border: var(--third-color) 2px solid;
   border-radius: 2em;
   background-color: var(--secondary-color);
@@ -318,44 +331,19 @@ h2{
   text-align: center;
   align-content: center;
   pointer-events: none;
+  transition: transform .2s, border-color .2s;
+
+  
 }
 
-.image4{
-    position: relative;
-    display: inline-block;
-    width: var(--width-grid_pic);
-    height: var(--height-grid_pic);
-    justify-self: center;
-    align-self: center;
-}
-
-.image4 img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  border-radius: 8px;
-  border: var(--third-color) 2px inset;
-}
-
-.image4 p{
-  margin-bottom: 5%;
-  top: 2%;
-  padding: 2%;
-  position: relative;
-  color: var(--font-header-color);
-  border: var(--third-color) 2px solid;
-  border-radius: 2em;
-  background-color: var(--secondary-color);
-  font-weight: 400;
-  text-align: center;
-  align-content: center;
-  pointer-events: none;
+.image3:hover p{
+  transform: translateY(-2px);
+  border-color: var(--border-color);
 }
 
 
 footer{
   position: static;
   margin-left: 1em;
-  margin-top: 1em;
+  margin-top: 5em;
 }
