@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Page HTML de base">
+    <meta name="description" content="All of contact">
     <title>Portfolio - Antonin Hidien</title>
     <link rel="stylesheet" href="./assets/css/contact.css">
 </head>
 <body>
 
+    <!--The header with for each page, main picture represents the content
+        and links to browse throught the others sections-->
     <header>
 
         <div class="contact-picture">
@@ -28,6 +30,7 @@
         </a>
     </header>
 
+    <!--The grid displays all of my contacts with links to my Linkedin and CV and possibility to copy/paste my phone and mail-->
     <main>
 
         <h1>Intéressé par mon profil ?</h1>
@@ -40,11 +43,11 @@
                 Mon CV
             </a>
 
-            <div class="mail">antoninhidien@orange.fr</div>
+            <div class="mail" onclick="copyMail()">antoninhidien@orange.fr</div>
 
-            <div class="numberphone">06 78 13 78 67</div>
+            <div class="numberphone" onclick="copyPhone()">06 78 13 78 67</div>
 
-            <a href="www.linkedin.com/in/antonin-hidien-b453b4186" class="linkedin">
+            <a href="https://www.linkedin.com/in/antonin-hidien-b453b4186" class="linkedin" target="_blank" rel="noopener">
                 LinkedIn
             </a>
 
@@ -54,10 +57,14 @@
 
     </main>
 
-
+    <!--Just a decorative footer-->
     <footer>
         <p>&copy; Mon Portfolio 2025/2026</p>
     </footer>
 
+    <!--Panel to display the message when mail or phone is copied-->
+    <div id="paste-panel">Copié dans le presse-papier !</div>
+
+    <script src="./assets/js/contacts.js"></script>
 </body>
 </html>

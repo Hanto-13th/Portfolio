@@ -1,5 +1,5 @@
+/*Initialize the main*/
 :root{
-
   --width-grid_pic: 40%;
   --height-grid_pic: 80%;
   --main-color: #000000e1;
@@ -17,6 +17,7 @@ body{
   color: var(--font-color);
 }
 
+/*Add the header and the pictures associated*/
 header{
   display: flex;
   border: var(--third-color) 2px outset;
@@ -26,6 +27,7 @@ header{
   align-items: center;
 }
 
+/*Each picture has a container which contains the image*/
 .contact-picture {
 
   position: relative;
@@ -48,6 +50,7 @@ header{
 
 }
 
+/*Here all the links button in the header*/
 .Bio-link,.Project-link,.Contact-link{
   color: var(--font-color);
   font-size: 1.5em;
@@ -94,6 +97,8 @@ h1:hover {
   border-color: var(--border-color);
 }
 
+/*The contacts grid which contains all the contacts link for Linkedin and download CV,
+and the function to copy and paste mail and numberphone*/
 
 .contacts-grid {
   margin-top: 2%;
@@ -147,7 +152,7 @@ h1:hover {
   background-color: var(--secondary-color);
   padding: 1em;
   text-decoration: none;
-  cursor: text;
+  cursor: pointer;
   transition: color 0.3s ;
 
 }
@@ -160,7 +165,7 @@ h1:hover {
   background-color: var(--secondary-color);
   padding: 1em;
   text-decoration: none;
-  cursor: text;
+  cursor: pointer;
   transition: color 0.3s ;
 }
 
@@ -187,4 +192,24 @@ h1:hover {
 footer{
   position: sticky;
   margin-left: 1em;
+}
+
+/*The panel to show the message when a element is copied in the clipboard*/
+
+#paste-panel {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--secondary-color);
+    color: var(--font-color);
+    border: var(--border-color) 1px solid;
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+#paste-panel.show {
+    opacity: 1;
 }

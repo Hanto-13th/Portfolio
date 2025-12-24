@@ -1,3 +1,4 @@
+/*Initialize the main*/
 :root{
   --width-grid_pic: auto;
   --height-grid_pic: auto;
@@ -16,6 +17,7 @@ body{
   color: var(--font-color);
 }
 
+/*Add the header*/
 header{
   display: flex;
   border: var(--third-color) 2px outset;
@@ -25,6 +27,7 @@ header{
   align-items: center;
 }
 
+/*Each picture has a container which contains the image*/
 .project-picture {
 
   position: relative;
@@ -46,6 +49,7 @@ header{
 
 }
 
+/*Here all the links button in the header*/
 .Bio-link,.Project-link,.Contact-link{
   color: var(--font-color);
   font-size: 1.5em;
@@ -111,6 +115,7 @@ h1{
 
 }
 
+/*The stacks grid which 2 distincts columns to display each section (stacks used and features)*/
 .stacks-features{
   margin-top: 2%;
   display: grid;
@@ -171,6 +176,7 @@ h1{
   list-style-type: disc;
 }
 
+/*The link for the Github page*/
 .github-link{
   font-size: 1.2em;
   justify-self: center;
@@ -203,6 +209,7 @@ h2{
   margin-top: 2%;
 }
 
+/*The grid for all the project pictures with container to contains images*/
 .pics-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(150px, 350px));
@@ -213,9 +220,12 @@ h2{
   margin-top: 3em;
 }
 
+/*Each image has container to contain the image, with paragraph to explain it*/
 .image1 {
     position: relative;
     display: inline-block;
+    text-decoration: none;
+    cursor: zoom-in;
     width: var(--width-grid_pic);
     height: var(--height-grid_pic);
     justify-self: center;
@@ -259,6 +269,8 @@ h2{
 .image2 {
     position: relative;
     display: inline-block;
+    text-decoration: none;
+    cursor: zoom-in;
     width: var(--width-grid_pic);
     height: var(--height-grid_pic);
     justify-self: center;
@@ -302,6 +314,8 @@ h2{
 .image3 {
     position: relative;
     display: inline-block;
+    text-decoration: none;
+    cursor: zoom-in;
     width: var(--width-grid_pic);
     height: var(--height-grid_pic);
     justify-self: center;
@@ -345,6 +359,8 @@ h2{
 .image4 {
     position: relative;
     display: inline-block;
+    text-decoration: none;
+    cursor: zoom-in;
     width: var(--width-grid_pic);
     height: var(--height-grid_pic);
     justify-self: center;

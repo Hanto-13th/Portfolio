@@ -1,3 +1,4 @@
+/*Initialize the main*/
 :root{
   --width-pictures: 40%;
   --height-pictures: 35%;
@@ -15,6 +16,7 @@ body{
   color:var(--font-color);
 }
 
+/*Add the header*/
 header{
   border:  2px outset var(--third-color);
   background-color: var(--secondary-color);
@@ -24,6 +26,7 @@ header{
 
 h1{
   justify-self: center;
+  color: var(--font-header-color);
 }
 
 main{
@@ -31,12 +34,15 @@ main{
   width: auto;
 }
 
+/*Add the grid with all the links to browse throught the website*/
 .container-link {
   height: 75vh;
   display: grid;
   grid-template-columns: repeat(3,1fr) ;
 }
 
+/*Each image has a container to contains images, a span which describe the image and the opacity handling when the
+image is hover*/
 .Bio-link{
     position: relative;
     display: inline-block;
