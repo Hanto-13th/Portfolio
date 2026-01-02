@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project 4">
+    <title>Portfolio - Antonin Hidien</title>
+    <link rel="stylesheet" href="./assets/css/projet4.css">
+</head>
+<body>
+
+    <!--The header with for each page, main picture represents the content
+        and links to browse throught the others sections-->
+    <header>
+
+        <div class="project-picture">
+        <img src="./assets/images/WebGen_icon.png" alt="Image">
+        </div>
+
+        <a href="./bio.html" class="Bio-link">
+            <span>Biographie</span>
+        </a>
+
+        <a href="./projets.html" class="Project-link">
+            <span>Mes projets</span>
+        </a>
+
+        <a href="./contact.html" class="Contact-link">
+            <span>Contacts</span>
+        </a>
+    </header>
+
+    <!--The main content groups all the sections-->
+    <main>
+
+        <h1>Website Generator</h1>
+        <!--a desc of the project-->
+        <div class="global-desc">
+            <section>
+                <p>Création d'un générateur de site web pour créer des templates HTML <br>
+                    avec possibilités d'ajouter des assets et du CSS pour l'esthétique global du site 
+                </p>
+            </section>
+        </div>
+
+        <!--The stacks and features section include all stacks used in project
+            and the features available-->
+        <div class="stacks-features">
+
+            <div class="col">
+                <h3 class="title-stacks">Stacks</h3>
+                    <ul class="stack">
+                        <li>
+                            Python 
+                        </li>
+                        <li>
+                            CSS
+                        </li>
+                        <li>
+                            Markdown
+                        </li>
+                        <li>
+                            VScode
+                        </li>
+                        
+                    </ul>
+            </div>
+
+            <div class="col">
+                <h3 class="title-features">Features</h3>
+                    <ul class="features">
+                        <li>
+                            Conversion automatique de fichier Markdown (.md) en fichier statique HTML (.html)
+                        </li>
+                        <li>
+                            Supporte le multi-page
+                        </li>
+                        <li>
+                            Chaque template est personnalisable via des assets (images,CSS...)
+                        </li>
+                        <li>
+                            URL customisable 
+                        </li>
+                    </ul>
+            </div>
+
+            
+        </div>
+
+        <!--Each project has a Github link-->
+        <div class="github-link">
+            <a href="https://github.com/Hanto-13th/Website-Generator">Lien Github</a>
+        </div>
+
+        <!--The grid contains all pictures of the project, the visiter can click to zoom in-->
+        <h2>Médias du projet</h2>
+        <div class="pics-grid">
+
+            <a class="image1" href="./assets/images/WebGen_main.png" target="_blank" rel="noopener">
+                <img src="./assets/images/WebGen_main.png" alt="Image">
+                <p>Des templates personnalisable pour chaque page</p>
+            </a>
+
+            <a class="image2" href="./assets/images/WebGen_link.png" target="_blank" rel="noopener">
+                <img src="./assets/images/WebGen_link.png" alt="Image">
+                <p>Possibilités de créer plusieurs pages accessible par des liens</p>
+            </a>
+
+            
+        </div>
+
+    </main>
+
+    <!--Just a decorative footer-->
+    <footer>
+        <p>&copy; Mon Portfolio 2025/2026</p>
+    </footer>
+
+</body>
+</html>

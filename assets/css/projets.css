@@ -1,4 +1,4 @@
-/*Initialize the main*/
+/*Initialize the main var*/
 :root{
   --width-grid_pic: 300px;
   --height-grid_pic: 250px;
@@ -241,6 +241,48 @@ main{
   opacity: 1;
 }
 
+.Project-4{
+    position: relative;
+    display: inline-block;
+    width: var(--width-grid_pic);
+    height: var(--height-grid_pic);
+    justify-self: center;
+    align-self: center;
+}
+
+.Project-4 img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  border-radius: 8px;
+  background-color: aliceblue;
+  border: var(--third-color) 2px inset;
+  opacity: 1;
+  transition: opacity 1 ease-in-out;
+}
+
+.Project-4 span{
+  margin:1em;
+  position: absolute;
+  color: var(--font-color);
+  font-weight: 600;
+  inset: 0;
+  text-align: center;
+  align-content: center;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 1 ease-in-out;
+}
+
+
+.Project-4:hover img{
+  opacity: 0.2;
+}
+
+.Project-4:hover span{
+  opacity: 1;
+}
 
 footer{
   position: sticky;
